@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<header>
+<title>Survey Form</title>
+<link rel="stylesheet" href="styles.css">
+</header>
+
+<body>
+
+<h1 id="title">Cricket Survey</h1>
+
+<p id="description">Thank you for taking the time to make Cricket better.</p>
+
+<form id="survey-form">
+
+<div class="input-element">
+<label id="name-label">Name</label>
+<input placeholder="Enter your name" type="text" id="name" required><br>
+</div>
+
+<div class="input-element">
+<label id="email-label">Email</label>
+<input placeholder="Enter your Email" type="email" id="email" required><br>
+</div>
+
+<div class="input-element">
+<label id="number-label">Age</label>
+<input placeholder="Enter your age" type="number" id="number" min="5" max="100" required><br>
+</div>
+
+<div class="input-element">
+<label id="select-label">Select your favorite team</label>
+<select id="dropdown">
+  <option>Bangladesh</option>
+   <option>India</option>
+    <option>Pakistan</option>
+     <option>West Indies</option>
+     <option>New Zealand</option>
+     <option>Australia</option>
+     <option>South Africa</option>
+     <option>England</option>
+     <option>Ireland</option>
+     <option>Afghanistan</option>
+</select><br>
+</div>
+
+<div>
+
+<label>Have you been to a match before?</label>
+
+<div>
+  <label><input type="radio" name="game" value="match">Yes</input></label>
+</div>
+
+<div>
+  <label><input type="radio" name="game" value="match">No</input></label>
+</div>
+
+</div><br>
+
+<div>
+
+<label>Your Suggestions</label>
+
+<div>
+  <label><input type="checkbox" name="ideas" value="tickets">Cheaper Tickets</input></label>
+</div>
+
+<div>
+  <label><input type="checkbox" name="ideas" value="food">Cheaper Food</input></label>
+</div>
+
+<div>
+  <label><input type="checkbox" name="ideas" value="teams">
+  More Teams Needed in ICC</input></label>
+</div>
+
+</div><br>
+
+<div class="input-element">
+<label>Additional Comments<label><br>
+<textarea type="text"></textarea>
+</div><br>
+
+<button type="submit" id="submit">Submit</button>
+
+</form>
+
+</body>
